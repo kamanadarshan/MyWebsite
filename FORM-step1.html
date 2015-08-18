@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+body{
+background:#efefef;
+
+}
+
+.form-holder{
+width:980px;
+background:#fffeee;
+margin:0 auto;
+padding:10px;
+
+}
+
+h1,h2{
+  color:red;
+  text-align:center;
+}
+
+form#Form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+input [type="text"]{
+   width:200px;
+}
+
+p span{
+   width: 190px;
+  float: left;
+}
+</style>
+</head>
+<body>
+<div class="form-holder">
+<form name="FORM" id="Form" method="POST" action="submit.php">
+<h1>Pizza Den Inc.</h1>
+<p><span>Customer Name</span>: <input type="text" name="customername" id="customername"></p>
+<p><span>Customer Address</span>: <input type="text" name="customeraddress" id="customeraddress"></p>
+<p><span>Customer Phone</span>: <input type="text" name="phone" id="phone"></p>
+<p><span>Customer Zip</span>: <input type="text" name="zipcode" id="zipcode"></p>
+
+<h2>Order Information</h2>
+<p><span>Pizza</span>: <input type="text" name="pizzaqty" id="pizzaqty" value=""></p>
+<p><span>Wings</span>: <input type="text" name="wingsqty" id="wingsqty" value=""></p>
+<p><span>Subs</span>: <input type="text" name="subsqty" id="subsqty" value=""></p>
+<p><span>Breads</span>: <input type="text" name="breadqty" id="breadqty" value=""></p>
+<p><span>Salad</span>: <input type="text" name="saladqty" id="saladqty" value=""></p>
+<p><span>Drinks</span>: <input type="text" name="drinksqty" id="drinskqty" value=""></p>
+<p><span>Order Type</span>:<input type="radio" name="ordertype" value="Delivery">Delivery &nbsp;
+<input type="radio" name="ordertype" value="Dine In">Dine In
+</p>
+<p><span>Payment Type</span>:<input type="radio" name="paymenttype" value="Cash">Cash &nbsp;
+<input type="radio" name="paymenttype" value="Card">Card
+</p><br>
+<p><input type="Submit" name="submit" value="Generate Receipt"></p><br>
+</form>
+</div>
+</body>
+</html>
